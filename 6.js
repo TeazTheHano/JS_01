@@ -53,7 +53,7 @@ fnNumber()
 // 3. Khai báo hàm trong hàm
 function action() {
     function actionMini(a, b, c) {
-        if((a + b) > c) {
+        if ((a + b) > c) {
             return 'yes1'
         } else {
             return 'no1'
@@ -70,22 +70,21 @@ function action2() {
     console.log('This is action2');
 }
 
-
 // 5. Expression fn: 
 
 // action3() // tính chất của HOSTING: không gọi được trước khi khai báo như declaration fn.
-let action3 = function(){   // gán
+let action3 = function () {   // gán
     console.log('This is action3');
 }
 action3()
 
 
-setTimeout(function(){  // callback. có thể đặt tên vào để cho dễ nhớ.
+setTimeout(function () {  // callback. có thể đặt tên vào để cho dễ nhớ.
     console.log('setTimeout')
 }, 2000)
 
 let myObject = {
-    myFn : function() {
+    myFn: function () {
         return 'hehehe'
     }
 }
@@ -94,12 +93,12 @@ console.log(myObject);
 // 6. Arrow fn
 // Arrow fn là một dạng rút gọn của function.
 
-hello = function() {
+hello = function () {
     return "Hello World!";
 }
 console.log(hello())
 // the same with
-hello2 = () => { 
+hello2 = () => {
     return "Hello World!";
 }
 console.log(hello2())
@@ -111,3 +110,16 @@ console.log(hello3(9));
 
 hello4 = val => 'hello ' + val;
 console.log(hello4("hehehehe"));
+
+
+var x1 = 1 
+let x2 = 2
+
+if (1) {
+    var x3 = 3;
+    let x4 = 4;
+    x4++
+}
+
+console.log(x3);
+console.log(x4);

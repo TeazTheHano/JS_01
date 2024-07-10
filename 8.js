@@ -65,6 +65,11 @@ let a = 9;
 let X = a / 'hehe'; 
 console.log(X);         //NaN: không phải số vì phép tính sai.
 console.log(typeof X);  //datatype vẫn là Number
+if (typeof X == 'number') {
+    console.log('1');
+} else {
+    console.log('2');
+}
 console.log(X == NaN);
 console.log(isNaN(X));
 

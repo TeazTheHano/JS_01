@@ -30,9 +30,12 @@ var fullName = 'Khuong Anh Kiet';
 console.log(fullName);
 // hàm console.log giúp in ra và kiểm tra các biến và sự thay đổi của biến.
 
-confirm('Xac nhan ban du tuoi de xem');
+let x = confirm('Xac nhan ban du tuoi de xem');
+console.log(x);
 
-prompt('Ban bao nhieu tuoi?');
+let x1 = Number.parseInt(prompt('Ban bao nhieu tuoi?'));
+console.log(x1);
+console.log(typeof x1);
 
 //setTimeout: thực hiện 1 function sau 1 khoảng thời gian nhất định. Cú pháp = setTimeout("functuon-cần-thực hiện", "giá trị thời gian trễ")
 setTimeout(function() {

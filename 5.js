@@ -65,8 +65,8 @@ writeLog4('he1', 'he2', 'he3');
 
 function writeLog5() {
     var myString = '';
-    for (let param of arguments) {
-        myString += `${param} - `
+    for (let i of arguments) {
+        myString += `${i} - `
     }
     console.log(myString)
 }

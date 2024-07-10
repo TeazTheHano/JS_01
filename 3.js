@@ -52,6 +52,8 @@ let isNull = null; // trắng. It is the thing which is nothing.
 let isID = Symbol('id'); // unique - Duy nhất
 let isID2 = Symbol('id'); // unique - Duy nhất
 
+console.log(isID); // Symbol(id)
+
 console.log(isID == isID2); // false vì tính duy nhất của symbol. isID2 nhận giá trị false, rỗng.
 
 // Function
@@ -67,8 +69,11 @@ let KhanhPhuong = {
     age: 18,
     address: 'Hanoi',
     isFunction: function () {
-    }
+    },
+    dasdfas: null,
 };
+
+console.log(KhanhPhuong.address);
 
 console.log('myObject', myObject);
 
@@ -79,10 +84,10 @@ let myArray = [
     'Hanoi',
 ]
 
-console.log('myArray', myArray);
+console.log( myArray);
 
 // Kiểm tra kiểu dữ liệu với Typeof
-console.log(typeof fullName);
+console.log(typeof myArray);
 
 // Toán tử so sánh Part 2
 

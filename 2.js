@@ -4,7 +4,7 @@
 
 */
 
-alert('boolean và logical');
+// alert('boolean và logical');
 
 let a = 10;
 let b = 20;
@@ -31,7 +31,7 @@ if (so1 == so2) {
 }
 
 // VD 2
-let fullName = '0';
+let fullName = `0`;
 if (fullName) {
     console.log('Name: Phép tính đúng')
 } else {
